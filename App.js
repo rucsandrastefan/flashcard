@@ -15,37 +15,36 @@ const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    // <NavigationContainer>
-    //   <Stack.Navigator>
-    //     <Stack.Screen
-    //       name="LogInScreen"
-    //       component={LogInScreen}
-    //       options={{ headerShown: false }}
-    //     />
-    //     <Stack.Screen
-    //       name="ForgotPasswordScreen"
-    //       component={ForgotPasswordScreen}
-    //       options={{ headerShown: false }}
-    //     />
-    //     <Stack.Screen
-    //       name="RegisterScreen"
-    //       component={RegisterScreen}
-    //       options={{ headerShown: false }}
-    //     />
-    //     <Stack.Screen
-    //       name="ForgotPasswordVerifyScreen"
-    //       component={ForgotPasswordVerifyScreen}
-    //       options={{ headerShown: false }}
-    //     />
-    //     <Stack.Screen
-    //       name="ForgotPasswordNewPassScreen"
-    //       component={ForgotPasswordNewPassScreen}
-    //       options={{ headerShown: false }}
-    //     />
-    //     <Stack.Screen name="Navigation" component={NavigationLayout} />
-    //   </Stack.Navigator>
-    // </NavigationContainer>
-    <View></View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="LogInScreen"
+          component={LogInScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="ForgotPasswordScreen"
+          component={ForgotPasswordScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="RegisterScreen"
+          component={RegisterScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="ForgotPasswordVerifyScreen"
+          component={ForgotPasswordVerifyScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="ForgotPasswordNewPassScreen"
+          component={ForgotPasswordNewPassScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen name="Navigation" component={NavigationLayout} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
